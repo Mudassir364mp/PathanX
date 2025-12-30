@@ -1,3 +1,13 @@
+export async function generateStaticParams() {
+  return [
+    { slug: "ai" },
+    { slug: "automation" },
+    { slug: "hardware" },
+    { slug: "cyber-security" }
+  ];
+}
+
+
 import PageHeader from "@/components/PageHeader";
 import Button from "@/components/Button";
 import { ArrowLeft, CheckCircle2, Cpu, Shield, Zap, RefreshCw } from "lucide-react";
