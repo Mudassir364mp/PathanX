@@ -1,10 +1,10 @@
 export async function generateStaticParams() {
-  return [
-    { slug: "ai" },
-    { slug: "automation" },
-    { slug: "hardware" },
-    { slug: "cyber-security" }
-  ];
+    return [
+        { slug: "ai" },
+        { slug: "automation" },
+        { slug: "hardware" },
+        { slug: "cyber-security" }
+    ];
 }
 
 
@@ -106,8 +106,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         };
     }
 
+    const titles: Record<string, string> = {
+        "ai": "Artificial Intelligence Systems for Businesses",
+        "automation": "Automation Systems & Smart Control Solutions",
+        "hardware": "Smart Hardware & IoT Devices",
+        "cyber-security": "Cyber Security Solutions & Digital Protection"
+    };
+
     return {
-        title: `${data.title} | PATHAN X INDUSTRY`,
+        title: titles[slug] || `${data.title} | PATHAN X INDUSTRY`,
         description: data.subtitle,
     };
 }

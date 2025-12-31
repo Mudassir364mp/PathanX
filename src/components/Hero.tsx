@@ -26,9 +26,9 @@ export default function Hero() {
 
                     <div className="flex flex-col items-center gap-4 mb-10 mt-8">
                         {/* Hero Headline */}
-                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-[0.15em] text-white">
+                        <h1 className="text-xl md:text-2xl font-bold uppercase tracking-[0.15em] text-white">
                             Building Future-Ready Technology
-                        </h2>
+                        </h1>
 
                         {/* Hero Focus Line */}
                         <div className="text-xs md:text-sm font-medium tracking-[0.3em] text-brand-silver/80 uppercase">

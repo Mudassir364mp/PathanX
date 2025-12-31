@@ -3,8 +3,8 @@ import SolutionsView from "@/components/SolutionsView";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Solutions & Services | PATHAN X INDUSTRY",
-    description: "Comprehensive solutions tailored for enterprise and smart living ecosystems.",
+    title: "Enterprise Automation & Smart Technology Solutions",
+    description: "Explore Pathan X smart automation, AI, cyber security and digital infrastructure solutions for modern businesses.",
 };
 
 export default function SolutionsPage() {
