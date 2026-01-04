@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import FutureProducts from "@/components/FutureProducts";
 import CTASection from "@/components/CTASection";
 import ConsultationCTA from "@/components/ConsultationCTA";
+import TrustedNetworkCTA from "@/components/TrustedNetworkCTA";
 
 import { Metadata } from "next";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <ConsultationCTA />
       <ServicesSection />
       <FutureProducts />
+      <TrustedNetworkCTA />
       <CTASection />
     </main>
   );
