@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 import { Mail, MapPin, Phone, Loader2, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
-const googleScriptUrl = "https://script.google.com/macros/s/AKfycbx6puS8iPC9o-1VRM57J59rl-XiUHso4c8MdB5NDRlib5gE-GUG7b3WGIhFV4nac9Rnbw/exec";
+const googleScriptUrl = "https://script.google.com/macros/s/AKfycbyUL3A8lco8Pjzl07cksw78EQQJOfzVXEEFkuP9CP1vFHfNi-cXXt8skRoZQAb4cK-0/exec";
 
 export default function ContactPage() {
     const [selectedService, setSelectedService] = useState("Smart Living Automation");

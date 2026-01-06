@@ -17,7 +17,7 @@ export default function ServiceInquiryModal({ isOpen, onClose, defaultService = 
     const [error, setError] = useState<string | null>(null);
 
     // Google Apps Script Web App URL - Yahan apna URL paste karein
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwLD3_wRqth7OcptkD6L5v-7_30L73J9DB-b0b0pcmZr_vqLQ745vHXn0ket1wC7Zzb/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUL3A8lco8Pjzl07cksw78EQQJOfzVXEEFkuP9CP1vFHfNi-cXXt8skRoZQAb4cK-0/exec";
 
     // Reset submitted state when modal opens
     useEffect(() => {

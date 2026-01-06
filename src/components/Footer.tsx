@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Cpu, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Cpu, Github } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -18,51 +18,87 @@ export default function Footer() {
                                     PATHAN X
                                 </span>
                                 <span className="text-[10px] tracking-[0.2em] text-brand-blue uppercase">
-                                    Industry
+                                    <div className="md:col-span-1">
+                                        <h2 className="text-2xl font-bold text-white mb-4 tracking-wider">PATHAN X</h2>
+                                        <p className="text-brand-silver text-sm leading-relaxed mb-6">
+                                            Engineering future-ready digital ecosystems with advanced AI, automation, and cyber security protocols.
+                                        </p>
+                                    </div>
+
+                                    {/* Quick Links */}
+                                    <div>
+                                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h3>
+                                        <ul className="space-y-4 text-sm text-brand-silver">
+                                            <li><a href="/about" className="hover:text-brand-blue transition-colors">About Us</a></li>
+                                            <li><a href="/solutions" className="hover:text-brand-blue transition-colors">Solutions</a></li>
+                                            <li><a href="/technologies" className="hover:text-brand-blue transition-colors">Technologies</a></li>
+                                            <li><a href="/contact" className="hover:text-brand-blue transition-colors">Contact</a></li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Legal Links */}
+                                    <div>
+                                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Trust</h3>
+                                        <ul className="space-y-4 text-sm text-brand-silver">
+                                            <li><a href="/terms" className="hover:text-brand-blue transition-colors">Terms & Conditions</a></li>
+                                            <li><a href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</a></li>
+                                            <li><a href="/refund" className="hover:text-brand-blue transition-colors">Refund Policy</a></li>
+                                            <li><a href="/trusted-network" className="hover:text-brand-blue transition-colors">Trusted Network</a></li>
+                                            <li><a href="/partnership" className="hover:text-brand-blue transition-colors">Partnership</a></li>
+                                        </ul>
+                                    </div>
+
+                                    ENGINEERING
                                 </span>
                             </div>
                         </div>
-                        <p className="text-brand-silver text-sm max-w-xs">
-                            Building intelligent systems and secure digital infrastructure for the future of smart living.
-                        </p>
-                    </div>
-
-                    {/* Links 1 */}
-                    <div className="flex flex-col space-y-4">
-                        <h4 className="text-white font-bold tracking-wider uppercase">Company</h4>
-                        <Link href="/about" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">About Us</Link>
-                        <Link href="/contact" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">Contact</Link>
-                        <Link href="/careers" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">Careers</Link>
-                    </div>
-
-                    {/* Links 2 */}
-                    <div className="flex flex-col space-y-4">
-                        <h4 className="text-white font-bold tracking-wider uppercase">Solutions</h4>
-                        <Link href="/technologies" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">Artificial Intelligence</Link>
-                        <Link href="/solutions" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">Cyber Security</Link>
-                        <Link href="/future-projects" className="text-brand-silver hover:text-brand-blue transition-colors text-sm">Smart Living</Link>
-                    </div>
-
-                    {/* Social */}
-                    <div className="flex flex-col space-y-4 items-center md:items-start">
-                        <h4 className="text-white font-bold tracking-wider uppercase">Connect</h4>
-                        <div className="flex space-x-4">
-                            <a href="https://twitter.com/pathanx_industry" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-colors group">
-                                <Twitter className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/pathan-x-industry" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-colors group">
-                                <Linkedin className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
-                            </a>
-                            <a href="https://www.instagram.com/pathanx_industry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-colors group">
-                                <Instagram className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
-                            </a>
+                        <div className="md:col-span-1">
+                            <h2 className="text-2xl font-bold text-white mb-4 tracking-wider">PATHAN X</h2>
+                            <p className="text-brand-silver text-sm leading-relaxed mb-6">
+                                Engineering future-ready digital ecosystems with advanced AI, automation, and cyber security protocols.
+                            </p>
                         </div>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div>
+                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h3>
+                        <ul className="space-y-4 text-sm text-brand-silver">
+                            <li><a href="/about" className="hover:text-brand-blue transition-colors">About Us</a></li>
+                            <li><a href="/solutions" className="hover:text-brand-blue transition-colors">Solutions</a></li>
+                            <li><a href="/technologies" className="hover:text-brand-blue transition-colors">Technologies</a></li>
+                            <li><a href="/contact" className="hover:text-brand-blue transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Legal Links */}
+                    <div>
+                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Trust</h3>
+                        <ul className="space-y-4 text-sm text-brand-silver">
+                            <li><a href="/terms" className="hover:text-brand-blue transition-colors">Terms & Conditions</a></li>
+                            <li><a href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</a></li>
+                            <li><a href="/refund" className="hover:text-brand-blue transition-colors">Refund Policy</a></li>
+                            <li><a href="/trusted-network" className="hover:text-brand-blue transition-colors">Trusted Network</a></li>
+                            <li><a href="/partnership" className="hover:text-brand-blue transition-colors">Partnership</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Contact */}
+                    <div>
+                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Contact</h3>
+                        <ul className="space-y-4 text-sm text-brand-silver">
+                            <li>General Inquiries & Support</li>
+                            <li><a href="mailto:contact@pathanx.com" className="text-white hover:text-brand-blue transition-colors">contact@pathanx.com</a></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-brand-blue/5 text-center">
-                    <p className="text-brand-silver/50 text-xs">
-                        © {new Date().getFullYear()} PATHAN X INDUSTRY. All rights reserved.
+                {/* Copyright */}
+                <div className="border-t border-brand-blue/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-silver/40">
+                    <p>© {new Date().getFullYear()} Pathan X Industry. All rights reserved.</p>
+                    <p className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+                        System Operational
                     </p>
                 </div>
             </div>

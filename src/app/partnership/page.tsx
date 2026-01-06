@@ -6,7 +6,7 @@ import { CheckCircle2, Users, Building, Cpu, BookOpen, Loader2 } from "lucide-re
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const googleScriptUrl = "https://script.google.com/macros/s/AKfycbykktJ2ia65u700xo2K5u-h1uAoaxVP-juO_eIzWGJiAxBsiKSsQu4CHBr_FbbqzFKZbQ/exec";
+const googleScriptUrl = "https://script.google.com/macros/s/AKfycbyUL3A8lco8Pjzl07cksw78EQQJOfzVXEEFkuP9CP1vFHfNi-cXXt8skRoZQAb4cK-0/exec";
 
 export default function PartnershipPage() {
     const [isSubmitted, setIsSubmitted] = useState(false);
