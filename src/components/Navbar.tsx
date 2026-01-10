@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Cpu, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Menu, X, Cpu } from "lucide-react";
 import Button from "./Button";
 
 const navLinks = [
@@ -66,18 +66,6 @@ export default function Navbar() {
                         </Button>
                     </Link>
 
-                    {/* Desktop Socials */}
-                    <div className="hidden lg:flex items-center gap-4 ml-6 border-l border-brand-blue/10 pl-6 h-6">
-                        <a href="https://www.instagram.com/pathanx_industry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-brand-silver hover:text-brand-blue transition-colors">
-                            <Instagram className="w-4 h-4" />
-                        </a>
-                        <a href="https://twitter.com/pathanx" target="_blank" rel="noopener noreferrer" className="text-brand-silver hover:text-brand-blue transition-colors">
-                            <Twitter className="w-4 h-4" />
-                        </a>
-                        <a href="https://www.linkedin.com/company/pathanx" target="_blank" rel="noopener noreferrer" className="text-brand-silver hover:text-brand-blue transition-colors">
-                            <Linkedin className="w-4 h-4" />
-                        </a>
-                    </div>
                 </div>
 
                 {/* Mobile Toggle */}

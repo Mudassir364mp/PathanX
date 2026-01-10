@@ -17,6 +17,10 @@ export default function Hero() {
             <div className="absolute inset-0 bg-[linear-gradient(rgba(2,6,23,0)_0%,#020617_100%),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
             <div className="container relative z-10 px-6 text-center">
+
+                {/* Mobile Socials (Collapsed below header if needed, but per request keeping top-right, adjusting for mobile via flex/hidden logic if desired, or simpler centered row) */}
+                {/* Request asked for "Mobile responsive (icons collapse below hero heading)". I will add a separate block below the HeroLogoCore/Heading for mobile visibility if hidden on desktop. */}
+
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -39,6 +43,7 @@ export default function Hero() {
                         <p className="text-lg md:text-xl font-medium mt-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan drop-shadow-[0_0_15px_rgba(59,130,246,0.4)]">
                             We don’t sell services — We engineer digital power.
                         </p>
+
                     </div>
 
                     <div className="flex justify-center">

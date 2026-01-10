@@ -1,15 +1,14 @@
 import Link from "next/link";
-import { Cpu, Github } from "lucide-react";
+import { Cpu, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
         <footer className="bg-brand-navy border-t border-brand-blue/10 py-12">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
-
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     {/* Brand */}
-                    <div className="flex flex-col items-center md:items-start space-y-4">
-                        <div className="flex items-center gap-2 group">
+                    <div className="md:col-span-1">
+                        <div className="flex items-center gap-2 group mb-4">
                             <div className="p-2 bg-brand-blue/10 rounded-lg">
                                 <Cpu className="w-6 h-6 text-brand-blue" />
                             </div>
@@ -18,45 +17,25 @@ export default function Footer() {
                                     PATHAN X
                                 </span>
                                 <span className="text-[10px] tracking-[0.2em] text-brand-blue uppercase">
-                                    <div className="md:col-span-1">
-                                        <h2 className="text-2xl font-bold text-white mb-4 tracking-wider">PATHAN X</h2>
-                                        <p className="text-brand-silver text-sm leading-relaxed mb-6">
-                                            Engineering future-ready digital ecosystems with advanced AI, automation, and cyber security protocols.
-                                        </p>
-                                    </div>
-
-                                    {/* Quick Links */}
-                                    <div>
-                                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h3>
-                                        <ul className="space-y-4 text-sm text-brand-silver">
-                                            <li><a href="/about" className="hover:text-brand-blue transition-colors">About Us</a></li>
-                                            <li><a href="/solutions" className="hover:text-brand-blue transition-colors">Solutions</a></li>
-                                            <li><a href="/technologies" className="hover:text-brand-blue transition-colors">Technologies</a></li>
-                                            <li><a href="/contact" className="hover:text-brand-blue transition-colors">Contact</a></li>
-                                        </ul>
-                                    </div>
-
-                                    {/* Legal Links */}
-                                    <div>
-                                        <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Trust</h3>
-                                        <ul className="space-y-4 text-sm text-brand-silver">
-                                            <li><a href="/terms" className="hover:text-brand-blue transition-colors">Terms & Conditions</a></li>
-                                            <li><a href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</a></li>
-                                            <li><a href="/refund" className="hover:text-brand-blue transition-colors">Refund Policy</a></li>
-                                            <li><a href="/trusted-network" className="hover:text-brand-blue transition-colors">Trusted Network</a></li>
-                                            <li><a href="/partnership" className="hover:text-brand-blue transition-colors">Partnership</a></li>
-                                        </ul>
-                                    </div>
-
-                                    ENGINEERING
+                                    Industry
                                 </span>
                             </div>
                         </div>
-                        <div className="md:col-span-1">
-                            <h2 className="text-2xl font-bold text-white mb-4 tracking-wider">PATHAN X</h2>
-                            <p className="text-brand-silver text-sm leading-relaxed mb-6">
-                                Engineering future-ready digital ecosystems with advanced AI, automation, and cyber security protocols.
-                            </p>
+                        <p className="text-brand-silver text-sm leading-relaxed mb-6">
+                            Engineering future-ready digital ecosystems with advanced AI, automation, and cyber security protocols.
+                        </p>
+
+                        {/* Social Icons */}
+                        <div className="flex items-center gap-4">
+                            <a href="https://www.instagram.com/pathanx_industry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(59,130,246,0.3)] group">
+                                <Instagram className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
+                            </a>
+                            <a href="https://twitter.com/pathanx" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(59,130,246,0.3)] group">
+                                <Twitter className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/pathanx" target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-blue/5 hover:bg-brand-blue/20 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(59,130,246,0.3)] group">
+                                <Linkedin className="w-5 h-5 text-brand-silver group-hover:text-brand-blue" />
+                            </a>
                         </div>
                     </div>
 
@@ -64,10 +43,10 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h3>
                         <ul className="space-y-4 text-sm text-brand-silver">
-                            <li><a href="/about" className="hover:text-brand-blue transition-colors">About Us</a></li>
-                            <li><a href="/solutions" className="hover:text-brand-blue transition-colors">Solutions</a></li>
-                            <li><a href="/technologies" className="hover:text-brand-blue transition-colors">Technologies</a></li>
-                            <li><a href="/contact" className="hover:text-brand-blue transition-colors">Contact</a></li>
+                            <li><Link href="/about" className="hover:text-brand-blue transition-colors">About Us</Link></li>
+                            <li><Link href="/solutions" className="hover:text-brand-blue transition-colors">Solutions</Link></li>
+                            <li><Link href="/technologies" className="hover:text-brand-blue transition-colors">Technologies</Link></li>
+                            <li><Link href="/contact" className="hover:text-brand-blue transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -75,11 +54,11 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-sm">Legal & Trust</h3>
                         <ul className="space-y-4 text-sm text-brand-silver">
-                            <li><a href="/terms" className="hover:text-brand-blue transition-colors">Terms & Conditions</a></li>
-                            <li><a href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</a></li>
-                            <li><a href="/refund" className="hover:text-brand-blue transition-colors">Refund Policy</a></li>
-                            <li><a href="/trusted-network" className="hover:text-brand-blue transition-colors">Trusted Network</a></li>
-                            <li><a href="/partnership" className="hover:text-brand-blue transition-colors">Partnership</a></li>
+                            <li><Link href="/terms" className="hover:text-brand-blue transition-colors">Terms & Conditions</Link></li>
+                            <li><Link href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/refund" className="hover:text-brand-blue transition-colors">Refund Policy</Link></li>
+                            <li><Link href="/trusted-network" className="hover:text-brand-blue transition-colors">Trusted Network</Link></li>
+                            <li><Link href="/partnership" className="hover:text-brand-blue transition-colors">Partnership</Link></li>
                         </ul>
                     </div>
 
