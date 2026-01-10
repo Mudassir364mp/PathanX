@@ -26,57 +26,20 @@ export default function TrustedNetworkList() {
     useEffect(() => {
         const fetchPartners = async () => {
             try {
-                // Check if URL is configured
-                if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbyUL3A8lco8Pjzl07cksw78EQQJOfzVXEEFkuP9CP1vFHfNi-cXXt8skRoZQAb4cK-0/exec") {
-                    // Simulate loading for demo purposes
-                    await new Promise(resolve => setTimeout(resolve, 1500));
-                    // Return mock data for visualization if backend isn't ready
-                    setPartners([
-                        {
-                            partnerName: "TechCorp Industries",
-                            category: "Technology Partner",
-                            city: "Mumbai",
-                            partnershipType: "Strategic Alliance",
-                            status: "Active",
-                            description: "Leading provider of industrial automation sensors and IoT hardware.",
-                            website: "https://techcorp.example.com"
-                        },
-                        {
-                            partnerName: "Global EduSystems",
-                            category: "Education Partner",
-                            city: "Bangalore",
-                            partnershipType: "Training & Certification",
-                            status: "Active",
-                            description: "Collaborating on next-gen curriculum for AI and Cyber Security training."
-                        },
-                        {
-                            partnerName: "Nexus Smart City",
-                            category: "Business Partner",
-                            city: "Dubai",
-                            partnershipType: "Smart Infrastructure",
-                            status: "Active",
-                            description: "Deployment of Pathan X security grid across Phase 2 urban development."
-                        },
-                        {
-                            partnerName: "Quantum Hardware Labs",
-                            category: "Hardware Partner",
-                            city: "Delhi",
-                            partnershipType: "Manufacturing Alliance",
-                            status: "Active",
-                            description: "Manufacturing smart IoT devices and automation modules."
-                        }
-                    ]);
-                    setLoading(false);
-                    return;
-                }
+                console.log('Fetching partners from:', GOOGLE_SCRIPT_URL);
 
                 // Fetch from Google Sheets
                 const response = await fetch(`${GOOGLE_SCRIPT_URL}?action=getPartners`);
+                console.log('Response status:', response.status);
+
                 const data = await response.json();
+                console.log('Response data:', data);
 
                 if (data.status === "success") {
                     setPartners(data.data || []);
+                    console.log('Partners loaded:', data.data?.length || 0);
                 } else {
+                    console.error('API error:', data.message);
                     setError("Failed to load trusted network data.");
                 }
             } catch (err) {
