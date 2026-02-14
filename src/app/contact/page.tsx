@@ -189,8 +189,8 @@ export default function ContactPage() {
                             <div className="space-y-6">
                                 {[
                                     { icon: <Mail className="w-6 h-6" />, label: "Email", value: "contact@pathanx.industry" },
-                                    { icon: <Phone className="w-6 h-6" />, label: "Phone", value: "+1 (555) 123-4567" },
-                                    { icon: <MapPin className="w-6 h-6" />, label: "HQ", value: "100 Innovation Blvd, Tech City, Future State 90210" },
+                                    { icon: <Phone className="w-6 h-6" />, label: "Phone", value: "+919529589650" },
+                                    { icon: <MapPin className="w-6 h-6" />, label: "HQ", value: "INDIA, MAHARASHTRA" },
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-4">
                                         <div className="p-3 bg-brand-blue/10 rounded-full text-brand-blue">{item.icon}</div>
